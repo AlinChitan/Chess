@@ -19,7 +19,8 @@ int main()
 	sf::Font font;
 	
 	sf::String str;
-	if (!font.loadFromFile("/usr/share/fonts/truetype/freefont/FreeMono.ttf"))
+	//if (!font.loadFromFile("/usr/share/fonts/truetype/freefont/FreeMono.ttf"))
+	if (!font.loadFromFile("./fonts/FreeMono.ttf"))
 	{
 			return EXIT_FAILURE;
 	}
