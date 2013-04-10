@@ -20,11 +20,6 @@ public:
 	simple_signal	OnSpace;
 	position_signal OnMouseOver;
 	position_signal OnMouseClick;
-
-private:
-	string 			m_Text;
-	string 			m_TextureFile;
-	Bounds	 		m_Bounds;
 	
 	void SetBounds(const Bounds& Bounds) {
 		this->m_Bounds = Bounds;
@@ -44,6 +39,11 @@ private:
 	const string& GetTextureFile() const {
 		return m_TextureFile;
 	}
+
+private:
+	string 			m_Text;
+	string 			m_TextureFile;
+	Bounds	 		m_Bounds;
 };
 
 }
